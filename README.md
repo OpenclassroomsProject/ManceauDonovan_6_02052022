@@ -7,11 +7,17 @@ Run `npm init` for install all required packages.
 
 ## Run server 
 
-Run `node server` to start ther server and send your request on `http://localhost:3000/`.
+Run `node server` to start ther server.
 
 ## Routages
 
 Look at the routes file to know all the available routes.
+
+## Send request 
+
+Send your request on `http://localhost:3000/`.
+
+
 
 
 
