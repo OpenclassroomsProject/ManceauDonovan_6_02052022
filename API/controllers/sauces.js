@@ -1,6 +1,5 @@
 const SauceSchema = require('../models/Sauce.js');
 const fs = require('fs');
-const { log } = require('console');
 const { dirname } = require('path');
 
 

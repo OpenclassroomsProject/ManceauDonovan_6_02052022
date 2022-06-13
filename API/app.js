@@ -13,7 +13,6 @@ const db = {
     Name: 'hottakes',
     username: 'admin',
     password: 'm8LeV8o2MiL4zjLy',
-
 }
 const uriMongodb = `mongodb+srv://${db.username}:${db.password}@Cluster0.xe73p.mongodb.net/${db.Name}?retryWrites=true&w=majority`
 
@@ -33,7 +32,6 @@ app.use((req, res, next) => {
     ];
 
     if (corsWhitelist.indexOf(req.headers.origin) !== -1) {
-
         res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
         res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
