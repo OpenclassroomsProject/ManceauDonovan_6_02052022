@@ -2,10 +2,12 @@ const express = require('express');
 const router = express.Router();
 const userCtrl = require('../controllers/user');
 
+const detectObj = require ('../middleware/detectObj')
 
 
 
-router.post('/login', userCtrl.login);
-router.post('/signup', userCtrl.signup);
+
+router.post('/login', detectObj , userCtrl.login);
+router.post('/signup', detectObj , userCtrl.signup);
 
 module.exports = router;
